@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>File Upload JavaScript with Progress Bar</title>
+  <link rel="stylesheet" href="Progress-bar.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+</head>
+<body>
+  <!--El siguiente div es el que contiene la mayor parte del documento-->
+  <div class="wrapper">
+    <div class="header">Sube tus archivos</div>
+    <form action="#" enctype="multipart/form-data">
+      <input class="file-input" type="file" name="file"  hidden>
+      <i class="fas fa-cloud-upload-alt"></i>
+      <p>Abrir archivos</p>
+    </form>
+    <section class="progress-area"></section>
+    <section class="uploaded-area"></section>
+  </div>
+    <!--El siguiente div es el que contiene la previsualizacion de archivos-->
+  <div id="vista-previa">Ver previsualizacion de ultimo archivo subido</div>
+
+  <script src="Progress- bar.js"></script>
+
+</body>
+</html>
